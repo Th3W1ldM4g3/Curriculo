@@ -1,3 +1,12 @@
+*{
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
 body{
     font-size: 20px;
 }
@@ -23,7 +32,9 @@ header .links a{
     color: #0077b6;
     font-weight: bold;
     margin: 0 10px;
-
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .descricao{
@@ -65,4 +76,10 @@ form input{
     margin: 5px 0;
     border: 1px solid rgb(117, 160, 146);
     border-radius: 8px;
+}
+
+h2{
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: normal;
 }

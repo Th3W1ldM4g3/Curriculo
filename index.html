@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Special+Gothic&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="estilo.css">
@@ -8,27 +11,27 @@
         <title>Currículo</title>
     </head>
     <body>
-        <header>
-            <div class="profile">
-            <!-- Inicia a divisão da tela para a foto de perfil-->
+        <header> <!-- Cabeçalho do currículo-->
+            <div class="profile"> <!-- Inicia a divisão da tela para a foto de perfil-->
                 <img src="foto_santiago.jpeg" alt="Foto de perfil">
                 <!-- Coloca uma imagem. Sua fonte é indicada pelo src, e pode ser um link da internet ou um arquivo local. alt mostra uma descrição caso o usuário possua alguma deficiência ou caso a imagem não carregue.-->
             </div>
-            <div class="links"> 
-            <!-- Inicia a divisão da tela para os links-->
+            <div class="links"> <!-- Inicia a divisão da tela para os links-->
                 <a target="_blank" href="https://github.com/">Github</a>
                 <a target="_blank" href="https://youtube.com/">Youtube</a>
                 <a target="_blank" href="https://br.linkedin.com">Linkedin</a> 
                 <!-- Coloca um texto conectado a um link-->
             </div>
         </header>
+
         <!-- Corpo do currículo-->
-        <section class="descricao">
-            <p>Coloque uma breve descrição sobre você.</p>
+
+        <section class="descricao"> <!-- Bloco de descrição-->
+            <p>Eu sou o Arthur Santiago, sou um aluno do IFMT cursando TI.</p>
+            <button id="botao">Continue aqui</button>
         </section>
 
-        <!-- Primeiro bloco de informações-->
-        <section class="conteudo">
+        <section class="conteudo"> <!-- Primeiro bloco de informações-->
             <div class="bloco">
                 <h2>Experiências anteriores</h2>
                 <p>Cite aqui suas experiências anteriores</p>
@@ -43,32 +46,37 @@
             </div>
         </section>
 
-        <!--Secção do formulário-->
-        <section class="falacomigo">
+        <section class="falacomigo"> <!--Secção do formulário-->
             <h2>Interessado no meu currículo?</h2>
-            <form>
+            <form
+                action="https://formspree.io/f/xjkwvgdk"
+                method="POST"
+            >
                 <label for="email">Email</label>
                 <input placeholder="nome@email.com" type="email" id="email" name="email" required>
                 <label for="telefone">Telefone</label>
                 <input placeholder="(66) *****-****" type="telefone" id="telefone" name="telefone" required>
-                <button type="submit">Entrar em contato</button>
+                <button id="botao" type="submit">Entrar em contato</button>
             </form>
         </section>
 
-        <section class="conteudo">
+        <section class="conteudo"> <!-- Segundo bloco de informações-->
             <div class="bloco">
-                <h2>Sobre Mim</h2>
-                <p>Adicione informações sobre quem você é, suas paixões e objetivos</p>
+                <div id="card">
+                    <h2>Sobre Mim</h2>
+                    <p>Olá! Eu sou um aluno cursando T.I. no IFMT de Campo Verde. Sempre gostei de tecnologia e espero me aprofundar no assunto estudando nesse curso, além de trabalhar na área no futuro. Moro atualmente com meus pais e meu irmão.
+                    </p>
+                </div>
             </div>
             <div class="bloco">
                 <h2>Meu canal</h2>
                 <iframe width="200" height="315" src="https://www.youtube.com/embed/cxy44ZGKrHc?si=ptzHbgoDu08EHkMp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
             </div>
             <div class="bloco">
                 <h2>Mensagem positiva</h2>
                 <p>"Aqui no estado do Ceará. Não, no estado do Pará. Desculpa, gente. É que fui pro Ceará, tá? Ontem eu tava no Ceará. Aqui eu não falei uma coisa. Ah, não, falei sim, né?"</p>
             </div>
         </section>
+        <script src="index.js"></script>
     </body>
 </html>
